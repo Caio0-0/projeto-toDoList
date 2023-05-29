@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="https://kit.fontawesome.com/532df4697a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+        <header class="conteudo">
+            <h1>Lista de Tarefas</h1>
+            <div class="inputs">
+                <input class="input-txt" type="text" name="addTarefas" id="addTarefas">
+                <button onclick="addTarefa()" class="add" id="btnAdd">+</button>
+            </div>
+        </header>
+        <main class="areaLista">
+            <div class="item">
+                <div class="item-icone"><i class="fa-regular fa-circle"></i></div>
+                <div class="item-nome">Texto de teste</div>
+                <div class="item-botao"><button class="delete"><i class="fa-solid fa-trash"></i></button></div>
+                
+            </div>
+            <div class="item-clicada">
+                <div class="item-icone"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
+                <div class="item-nome">Texto de teste</div>
+                <div class="item-botao"><button class="delete"><i class="fa-solid fa-trash"></i></button></div>
+                
+            </div>
+        </main>
+        <script src="Scripts/script.js"></script>
+
+</body>
+</html>
