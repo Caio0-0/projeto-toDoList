@@ -4,109 +4,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 /*
 corres:
-#36BFB1
-#038C73
-#02735E
-#014034
-#0D0D0D
+#6B5F00
+#EEDB47
+#EBCF00
+#6B6220
+#B8A200
 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
-    background-image: linear-gradient(68.15deg,#dafdf7,#b6f0e5);
+    background-image: linear-gradient(68.15deg,#ffff,#f1fcca);
     font-family: 'Didact Gothic', sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
 }
 h1{
-    text-align: center;
     font-family: 'Rowdies', cursive;
     color: #ffffff;
+    text-align: center;
 }
-.conteudo{
+.text{
+    display: block;
     margin: auto;
-    padding: 10px;
-    background-image: linear-gradient(68.15deg,#0fa388,#055849);
-    width: 60%;
-    border-radius: 10px 0px;
+    margin-top: 40px;
+    background-color: #a3ac91;
+    padding: 20px;
+    border-radius: 10px ;
+    width: 500PX;
+    
+
 }
 .inputs{
-    text-align: center;
+    
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 40px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    margin: 10px;
-}
-.input-txt{
-    width: 55%;
-    margin: 10px;
-    height: 30px;
-    
-    border-radius: 10px;
-    padding: 10px;
-    border: 3px solid #055849;
-    font-size: 1.3em;
-}
-.input-txt:focus{
-    
-    border: 3px solid #ffffff;
-}
-.add{
-    font-size: 2em;
-    width: 50px;
-    color: white;
-    margin: 10px;
-    height: 50px;
-    border-radius: 20px 0px;
-    background-color: rgba(255, 255, 255, 0);
-    border: 3px solid rgb(255, 255, 255);
-    transition: ease 0.5s;
-}
-.add:hover{
-    background-color: #289186;
-    color: rgba(255, 255, 255, 0.637);
-    transition: ease 0.5s;
-}
-.areaLista{
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-  
-}
-.item,.item-clicada{
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #ffffff;
-    width: 50%;
-    box-shadow: 0 0 12px #28918798;
-    border-radius: 20px;
-    display: flex;
     align-items: center;
     justify-items: center;
-    justify-content: space-between;
 }
-.item-icone{
-    font-size: 25px;
+.input-txt{
+    width: 450px;
+    padding: 10px;
+    font-size: 1.4em;
+    border-radius: 20px;
+    border: 1px solid black;
+    text-align: center;
 }
-.item-nome{
+.add{
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #c3ceab;
+    width: 50px;
+    height: 50px;
     font-size: 1.3em;
+    margin-left: 10px;
+    transition: ease 0.3s;
 }
-.item-botao button{
-    font-size: 25px;
+.add:hover{
+    transition: ease 0.3s;
+    background-color: #a8b393;
+}
+.areaLista{
+    display: block;
+    margin: auto;
+}
+.item,.item-clicada{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    width: 40%;
+    border-bottom: 1px solid #8e967f;
+}
+.delete{
+    background-color: #f1fcca00;
     border: none;
-    cursor: pointer;
-    color: rgb(209, 73, 73);
-    background-color: #ffffff00;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1.1em;
+}
+.delete:hover{
+    color: #b43e3e;
+    transition: ease 0.3s;
+}
+.item-clicada{
+    background-color: #e0e0e0;
 }
 
-.item-clicada{
-    background-color: #61b6a6;
-}
-.item-clicada .item-icone i{
-    font-size: 25px;
-    color: #03332a;
-}
 .item-clicada .item-nome{
     text-decoration: line-through;
-    color: #03332a;
+    color: #8e967f;
 }
     
+.cicle{
+    border: 1px solid black;
+    border-radius: 60%;
+    padding-left: 15px;
+    
+    padding-right: 10px;
+}
+.cicle-marcado{
+    border: 1px solid black;
+    padding-left: 15px;
+    border-radius: 60%;
+    padding-right: 10px;
+    background-color: #7a816c;
+}
